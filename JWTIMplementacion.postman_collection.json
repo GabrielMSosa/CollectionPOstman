@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "2258a577-687b-494a-b82e-df234e49bc54",
+		"name": "JWTIMplementacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/user/saveUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\",\r\n    \"email\": \"admin@admin.com\",\r\n    \"roles\": [\r\n        \"Admin\",\r\n        \"Manager\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/saveUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"saveUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user/loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\": \"ds2525\",\r\n\"password\": \"donotforgetme\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/loginUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"loginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user/getData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI4MzA1Iiwic3ViIjoiZHMyNTI1IiwiaXNzIjoiQUJDX0x0ZCIsImF1ZCI6IlhZWl9MdGQiLCJpYXQiOjE2NTAxODU2NDAsImV4cCI6MTY1MDE4OTI0MH0.p93n7PFFOVkMqzuvQVbKM-fKf5BAf6NMeJjougsNDNUrn--2-8pnkbWuI2wEWy4B2BvN9WRjdRiozOL8lGlKJQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/getData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"getData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

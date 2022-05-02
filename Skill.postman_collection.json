@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "7e2efce0-f84d-4d29-845c-32e616c1f601",
+		"name": "Skill",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/skill",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"lenguaje\": \"asdf\",\r\n      \"info\": \"asdf\",\r\n      \"nivel\": \"45%\",\r\n      \"UrlImg\": \"https://drive.google.com/uc?id=asdf&export=download\",\r\n      \"id\": 5\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/skill",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"skill"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/skill/traertodo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/skill/traertodo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"skill",
+						"traertodo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "1cd3c27c-463a-43f6-84b9-efb8e29e5edc",
+		"name": "Idioma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/crear",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxODM0Iiwic3ViIjoiYWRtaW4iLCJpc3MiOiJBQkNfTHRkIiwiYXVkIjoiWFlaX0x0ZCIsImlhdCI6MTY1MTE5MDU3NCwiZXhwIjoxNjUxMTk0MTc0fQ.flj_FJ3Zeav5tnVEIc2oAdAHzIAbs9OQEjUoybvnkPC-T-9Pg-Y72z-pvnaa1R0uBfxRmJrXJvzF8ThmfTEByg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"id\": 1,\r\n      \"idioma\": \"Inglés\",\r\n      \"nivel_lectura\": \"Muy avanzado\",\r\n      \"nivel_escritura\": \"Basico\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/idioma",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"idioma"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

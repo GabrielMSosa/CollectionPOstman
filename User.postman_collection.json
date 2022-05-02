@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "4646bf08-de8a-4dea-b13c-664dd495d0d2",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIxMzYzIiwic3ViIjoiYWRtaW4iLCJpc3MiOiJBQkNfTHRkIiwiYXVkIjoiWFlaX0x0ZCIsImlhdCI6MTY1MDU2NTQxNiwiZXhwIjoxNjUwNTY5MDE2fQ.g98GDQHJVy46I59VfJhpSKSomXX3gD-PwWfNL6cHnGo2ouezmak82xzJCbCPrtSsqhkvCzZgbK-fTCoC13yPKw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "       { \"id\":1,\r\n        \"nombre\":\"Gabriel Matias\",\r\n        \"apellido\":\"Sosa\",\r\n        \"telefono\":\"+5493755261740\",\r\n        \"email\":\"sosagabriel79@gmail .com\",\r\n        \"edad\":\"31\",\r\n        \"acercademi\":\"Me encanta innovar, generar nuevas metodologias para mejorar procedimientos y siempre seguir aprendiendo \",\r\n        \"urlImg\":\"https://drive.google.com/uc?id=1SV2lNnz2bJb5gKYnzlGuA4tgmJmHDRYf&export=download\"\r\n       }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/userp/cargar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userp",
+						"cargar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user/traertodo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI3NTUwIiwic3ViIjoiYWRtaW4iLCJpc3MiOiJBQkNfTHRkIiwiYXVkIjoiWFlaX0x0ZCIsImlhdCI6MTY1MTE5MzA2MCwiZXhwIjoxNjUxMTk2NjYwfQ.i1_qJXsGh_CqoxlG0MQIR5Cy1M90BbZe21rt5IGGH9zWtKy9Yu9V-W84mpVpbm4P4kA6XgEPtpzRXboSWWkuDw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/userp/traertodo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userp",
+						"traertodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/userp/editar/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI2MjY4Iiwic3ViIjoiYWRtaW4iLCJpc3MiOiJBQkNfTHRkIiwiYXVkIjoiWFlaX0x0ZCIsImlhdCI6MTY1MTI0MzY0MiwiZXhwIjoxNjUxMjQ3MjQyfQ.MX7Phlu-Ugj8MTkMmG1tb6mCRFmjhAbpqeqxf_GVWrkwJ9F9Cw4MOx1edHx4l6JP-DWJ-ryKKriW-VmhD205vA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "       { \"id\":1,\r\n        \"nombre\":\"Gabriel1 Matias1\",\r\n        \"apellido\":\"Sosa1\",\r\n        \"telefono\":\"1+5493755261740\",\r\n        \"email\":\"sosagabriel79@outloo1k.com\",\r\n        \"edad\":\"31\",\r\n        \"acercademi\":\"1Me 1encanta innovar1, generar nuevas metodologias para mejorar procedimientos y siempre seguir aprendiendo \",\r\n        \"urlImg\":\"1https://drive.google.com/uc?id=1SV2lNnz2bJb5gKYnzlGuA4tgmJmHDRYf&export=download\"\r\n       }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/userp/editar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userp",
+						"editar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/redsoc/cargar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyMDkzIiwic3ViIjoiYWRtaW4iLCJpc3MiOiJBQkNfTHRkIiwiYXVkIjoiWFlaX0x0ZCIsImlhdCI6MTY1MTM1ODk4NywiZXhwIjoxNjUxMzYyNTg3fQ.Dj4S1N4WzGB2IKkKKJCAo_OMgM9HN0V4uLAa5EBsA-2On8-_pVf_0urQ3Lq2G9drKH6KVCnYT8JqXeC6qBotaw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"linkGit\": \"acaponemosnuestrolink de la red\",\r\n    \"linkLn\": \"acaponemosnuestrolink de la red\",\r\n    \"linkFace\": \"acaponemosnuestrolink de la red\",\r\n    \"linkTwit\": \"acaponemosnuestrolink de la red\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/redsoc/cargar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"redsoc",
+						"cargar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/redsoc/traertodo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI5MzE1Iiwic3ViIjoiYWRtaW4iLCJpc3MiOiJBQkNfTHRkIiwiYXVkIjoiWFlaX0x0ZCIsImlhdCI6MTY1MTM1OTQyMywiZXhwIjoxNjUxMzYzMDIzfQ.M2sYgsQX54Vr9vep7_WWQ88G4e_gwvg3PXULYjE94yDTFPK69UbDfmN_iw2KR6zaOlt7lSvSA5C6e7SRYTLy0g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/redsoc/traertodo?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"redsoc",
+						"traertodo"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/redsoc/editar/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI5MzE1Iiwic3ViIjoiYWRtaW4iLCJpc3MiOiJBQkNfTHRkIiwiYXVkIjoiWFlaX0x0ZCIsImlhdCI6MTY1MTM1OTQyMywiZXhwIjoxNjUxMzYzMDIzfQ.M2sYgsQX54Vr9vep7_WWQ88G4e_gwvg3PXULYjE94yDTFPK69UbDfmN_iw2KR6zaOlt7lSvSA5C6e7SRYTLy0g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"linkGit\": \"acaponemosnuestrolink1 de la red\",\r\n    \"linkLn\": \"acaponemosnuestrolink 1de la red\",\r\n    \"linkFace\": \"acaponemosnuestroli1nk de la red\",\r\n    \"linkTwit\": \"acaponemosnuestrolink1 de la red\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/redsoc/editar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"redsoc",
+						"editar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
